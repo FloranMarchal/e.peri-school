@@ -1,0 +1,68 @@
+:root{
+    --main-green : #44B7AA;
+    --secondary-green : #86B8B2;
+    --third-green : #DEECEA;
+    --main-grey : #737373;
+    --secondary-grey : #3736367F;
+    --main-black : #373636;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+}
+header {
+    margin: 0;
+    background-color: var(--main-green);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    text-decoration: none;
+}
+
+footer{
+    display: grid;
+    font-family: "Work sans",sans-serif;
+    font-weight: normal;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-green );
+}
+
+#logo-footer{
+    grid-column: 1 /span 2;
+    margin: 1.5em 2em 0 2em;
+}
+
+footer>div{
+    padding: 0.5em 0 0.5em;
+    margin: 1em 0 1em 0;
+}
+
+footer li{
+    text-align: center;
+}
+
+footer>div li:first-child{
+    margin-bottom: 2em;
+}
+
+#left-block{
+    grid-column: 1/ span 1;
+}
+
+#right-block{
+    grid-column: 2/span 1;
+    border-left: solid white 0.1em;
+}
